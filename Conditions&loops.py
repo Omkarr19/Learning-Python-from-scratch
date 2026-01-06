@@ -113,7 +113,7 @@ if len(username) > 12:
     print("username should not be more than 12 characters")
 elif not username.find(" ") == -1:
     print("Username should not contain any spaces")
-elif not username.isalpha():
+elif not username.isalpha():                              # isalpha checks that string contains only letters or alphabets
     print("Username should not contain any digits")
 else:
     print(f"Welcome {username}")
@@ -147,10 +147,39 @@ else:
 # :  = insert a space before positive numbers
 # :, = comma separator
 
-price1 = 3.14159
-price2 = -987.65
-price3 = 12.34
+#price1 = 30000.14159
+#price2 = -987.65
+#price3 = 12.34
 
-#print(f"price 1 is {price1 : .2f}")
-print(f"price 2 is {price2 : 10}")
-print(f"price 3 is {price3 : .3f}")
+#print(f"price 1 is {price1 :+,.2f}")
+#print(f"price 2 is {price2 :-}")
+#print(f"price 3 is {price3 : .3f}")
+
+
+#WHILE LOOPS = execute some code WHILE some condition remains true
+
+#here is simple if else example
+#name = input("Enter your name: ")
+#if name == "":
+#    print("You did not enter your name")
+#else:
+#    print(f"Hello {name}")
+
+#similar to that here is while loop example
+#name = input("Enter your name: ")
+#while name == "":
+#    print("You did not enter your name")
+#    name = input("please enter your name: ")     #this is neccessory to get our of the loop without this line it will be stuck in infinite loop
+#print(f"Hello {name}")
+
+#age = int(input("Enter your age: "))
+#while age <= 0 :
+#    print("Please Enter Valid age!")
+#    age = int(input("Enter your age: "))
+#print(f"You are {age} years old")
+
+food = input("Enter your fav food (press 'q' to quit): ")
+while not food.lower() == "q" :
+    print(f"u fav food is {food}")
+    food = input("Enter another your fav food (press 'q' to quit): ")
+print("go away bye")

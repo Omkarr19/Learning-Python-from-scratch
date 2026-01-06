@@ -60,14 +60,13 @@ print(age)
 age = str(age)
 print(age, type(age))
 
-age += "1" #using double quate cuz age is string now this is strong concat
+age += "1" #using double quate cuz age is string now this is string concat   (NOTE: IT IS "+=", not "=+")
 print(age)
 
 #converting str in bool
 # gives true is str has value, false if empty str
 name = bool(name)
 print(name)
-
 
 #input() = A function that prompts the user to enter data Returns the entered data as a string
 
