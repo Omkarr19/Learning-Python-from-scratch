@@ -178,8 +178,141 @@ else:
 #    age = int(input("Enter your age: "))
 #print(f"You are {age} years old")
 
-food = input("Enter your fav food (press 'q' to quit): ")
-while not food.lower() == "q" :
-    print(f"u fav food is {food}")
-    food = input("Enter another your fav food (press 'q' to quit): ")
-print("go away bye")
+#food = input("Enter your fav food (press 'q' to quit): ")
+#while not food.lower() == "q" :
+#    print(f"u fav food is {food}")
+#    food = input("Enter another your fav food (press 'q' to quit): ")
+#print("go away bye") 
+
+#num = int(input("Enter a number between 1 - 10: "))
+#while num < 1 or num > 10 :
+#    print("number is not between 1 - 10")
+#    num = int(input("Enter a number between 1 - 10: "))
+#print(f"your number is {num}")
+
+
+#python compound interest calculator
+#principle = 0
+#rate = 0
+#time = 0
+
+#while principle <= 0:
+#    principle = float(input("Enter principle amount: "))
+#    if principle <= 0:
+#        print("Principle amount can't be less than or equal to zero")
+
+#while rate <= 0:
+#    rate = float(input("Enter the interest rate: "))
+#    if rate <= 0:
+#        print("Interest rate can't be less than or equal to zero")
+
+#while time <= 0:
+#    time = int(input("Enter time in years: "))
+#    if time <= 0:
+#        print("Time in years can't be smaller than or equal to zero")
+
+#print(f"principle amount is {principle}")
+#print(f"Interest rate is {rate}%")
+#print(f"Time in years is {principle}years")
+#print("Calculating compound interest...")
+#cm = principle * pow((1 + rate/100), time)
+
+#print(f"balance after {time}year/s: ${cm: .2f}")
+
+# for loops = execute a block of code a fixed number of times.
+#             you can iterate over a range, string, sequence, etc.
+
+#for i in range(1,11):
+#    print(i)
+
+#we can use reversed function too shown below
+#for i in reversed(range(1, 11)):
+#    print(i)
+#print("HAPPYY NEWW YEARRR!!!")
+
+# or also can be revesed as shown below!
+# for i in range(11, 0, -1):
+#       print(i)
+
+#we can use one more parameter to display number by gaps
+#for i in range(1, 11, 2):    #numbers will be displayed like (1,3,5,7,9) 
+#    print(i)
+
+#credit_card = "1234-5678-9012-3456"   #iteration over string
+
+#for i in credit_card :
+#    print(i)
+
+#suppose we are counting from 1 to 20
+#and i want to skip a number, then ill use "continue" keyword.
+#if we use "break" keyword it will stop at 12
+#for i in range(1, 21):
+#    if i == 13:
+#        continue
+#    else :
+#        print(i)
+
+
+#COUNTDOWN TIMER USING SLEEP FUNCTION
+#import time
+#time.sleep(3)
+#print("TIME'S UP")
+
+#import time
+#my_time = int(input("Enter your countdown time in seconds: "))
+#for x in reversed(range(0, my_time)):
+#    print(x)
+#    time.sleep(1)
+#print("TIME'S UP")
+
+#import time
+#my_time = int(input("Enter your time in seconds: "))
+#for i in range(my_time, 0, -1): 
+#    seconds = i % 60      # makes sure that seconds remain from 0 to 59
+#    minutes = int(i / 60) % 60
+#    hours = int(i / 3600)
+#    print(f"{hours:02}:{minutes:02}:{seconds :02}")  #used format specifier for showing digits like 09 and not 9
+#    time.sleep(1)
+#print("Time's up")
+
+
+#nested loop = A loop within another loop (outer, inner)
+#              outer loop:
+#                 inner loop:
+# ex., while x>0:
+#        while y>0:
+#           print("Do something")
+
+#import time
+#for i in range(1,10):
+#    print(i, end = " ")   #end keyword used to edit output format. here, default is end = "\n" which prints o/p in one below one, if we write end = " " then it will print in one line with space.
+#    time.sleep(1)
+
+#for x in range(3):  #whatever code will be in this loop will be executed 3 times
+#    for y in range(1,10):
+#        print(x, end = " ")
+
+#Now, we have to pay attention to which loop we are printing in print statement
+#here, with this same loops but let's print different loop this time
+
+#for x in range(3):
+#    for y in range(1,10):
+#        print(y, end = "")
+#this will print numbers from 1 to 9 three times.
+
+#for x in range(3):
+#    for y in range(1,10):
+#        print(y, end = " ")
+#    print()
+#this will display numbers 1 to 9 in one line and then another set of 1 to 9 below it.
+
+#now try to take some input
+#rows  = int(input("Enter number of rows: "))
+#columns = int(input("Enter number of columns: "))
+#symbol = input("Enter symbol to print: ")
+
+#for x in range(rows):
+#    for y in range(columns):
+#        print(symbol, end = "")
+#    print()
+
