@@ -1,13 +1,13 @@
 #collection = single "variable"  used to store multiple values
 # List =  [] ordered and changeable. Duplicates OK
-# Set =   {} unordered and immutable(cannot be changed), Add/remove OK, NO Duplicates
-# Tuple = () ordered and unchangeable. Duplicates OK. FASTER
+# Set =   {} unordered and immutable(cannot be changed), Add/remove OK, NO Duplicates, dislpayed in random order
+# Tuple = () ordered and unchangeable. Duplicates OK. FASTER 
 
 #fruits = ["apple","banana","orange","coconut"]
 #print(fruits)
 
 #can use the index operator [index_number] to print specific element
-planets = ["Earth", "Venus","Mars"]
+#planets = ["Earth", "Venus","Mars"]
 #print(planets[1])
 #print(planets[::2])
 #print(planets[1:3])
@@ -46,3 +46,23 @@ planets = ["Earth", "Venus","Mars"]
 #to clear elements use clear method
 #planets.clear()
 
+#to print index of element
+#print(planets.index("Earth"))
+
+#to count if an elements occurs multiple time use count() method
+#print(planets.count("Earth")) 
+
+#fruits = {"apples","orange","banana","coconut"}
+#print(dir(fruits))
+
+#mostly have same attrbutes as List like len(), or we can check if element is in set using ("element" in set_name) - return true, false , index operator
+# can add elements using add() method
+#fruits.add("pineapple") 
+#fruits.remove("pineapple")
+#fruits.pop()  #this will remove first element of set, but it is going to be random
+#fruits.clear()
+#print(fruits)
+
+#its = ("apple","orange","banana","coconut","coconut")
+#mostly have same attrbutes as List like len(), or we can check if element is in set using ("element" in set_name) - return true, false , index operator
+#print(fruits.count("coconut"))
