@@ -222,7 +222,7 @@ else:
 # for loops = execute a block of code a fixed number of times.
 #             you can iterate over a range, string, sequence, etc.
 
-#for i in range(1,11):
+#for i in range(1,11):    # 1 to 10
 #    print(i)
 
 #we can use reversed function too shown below
@@ -315,4 +315,3 @@ else:
 #    for y in range(columns):
 #        print(symbol, end = "")
 #    print()
-
