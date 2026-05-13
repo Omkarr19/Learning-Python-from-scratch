@@ -60,7 +60,7 @@ print(age)
 age = str(age)
 print(age, type(age))
 
-age += "1" #using double quate cuz age is string now this is string concat   (NOTE: IT IS "+=", not "=+")
+age += "1" #using double quotes cuz age is string now this is string concat   (NOTE: IT IS "+=", not "=+")
 print(age)
 
 #converting str in bool
